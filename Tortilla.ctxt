@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Tortilla
+comment1.params=
+comment1.target=Tortilla()
+comment2.params=numeroDeHuevos
+comment2.target=int\ a\u00F1adirHuevos(int)
+comment3.params=puntoCoccion
+comment3.target=void\ puntoDeCoccion(java.lang.String)
+comment4.params=tieneCebolla
+comment4.target=void\ llevaCebolla(boolean)
+numComments=5

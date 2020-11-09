@@ -1,11 +1,13 @@
 #BlueJ class context
 comment0.target=Tortilla
-comment1.params=
-comment1.target=Tortilla()
-comment2.params=numeroDeHuevos
-comment2.target=int\ a\u00F1adirHuevos(int)
-comment3.params=puntoCoccion
-comment3.target=void\ puntoDeCoccion(java.lang.String)
+comment1.params=puntoDeCoccion\ numeroDeHuevos
+comment1.target=Tortilla(java.lang.String,\ int)
+comment2.params=huevos
+comment2.target=void\ a\u00F1adirHuevos(int)
+comment3.params=coccion
+comment3.target=void\ setPuntoDeCoccion(java.lang.String)
 comment4.params=tieneCebolla
 comment4.target=void\ llevaCebolla(boolean)
-numComments=5
+comment5.params=
+comment5.target=void\ imprimirEstadoTortilla()
+numComments=6

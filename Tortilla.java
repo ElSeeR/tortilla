@@ -8,32 +8,37 @@ public class Tortilla{
 
     public Tortilla(String puntoDeCoccion, int numeroDeHuevos){
         puntoCoccion = puntoDeCoccion;
-        numeroDeHuevos = numeroHuevos;
+        numeroHuevos = numeroDeHuevos;
         llevaCebolla = false;
     }
 
-    public void añadirHuevos(int huevos){
-        numeroHuevos = huevos;
-        numeroHuevos = numeroHuevos + huevos;
+    public void añadirMasHuevos(int añadirHuevos){
+       numeroHuevos = añadirHuevos + numeroHuevos;
     }
 
     public void setPuntoDeCoccion(String coccion){
         puntoCoccion = coccion;
     }
 
-    public void llevaCebolla (boolean tieneCebolla){
-        llevaCebolla = tieneCebolla;
-        if(tieneCebolla == true){
-            System.out.println("Ahora hay cebolla en la tortilla");
+    public void AñadirOQuitarCebolla(){
+        if(llevaCebolla == true){
+            llevaCebolla = false;
         }
-
         else{
-            System.out.println("Vaya... con cebolla esta mejor, pero bueno, tu tortilla no llevará cebolla");
+            llevaCebolla = true;
         }
+        
     }
     
     public void imprimirEstadoTortilla(){
-        System.out.println("Hay " + numeroHuevos + " huevos, el punto de cocción es " +
-        puntoCoccion + ". Lleva cebolla?: " + llevaCebolla);
+        if(llevaCebolla == true){
+            System.out.println("Hay " + numeroHuevos + " huevos, el punto de cocción es " +
+            puntoCoccion + ". Lleva cebolla?: Sí");
+        }
+        else{
+            System.out.println("Hay " + numeroHuevos + " huevos, el punto de cocción es " +
+            puntoCoccion + ". Lleva cebolla?: No");
+        }
+        
     }
 }

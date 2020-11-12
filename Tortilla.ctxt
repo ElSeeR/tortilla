@@ -2,12 +2,12 @@
 comment0.target=Tortilla
 comment1.params=puntoDeCoccion\ numeroDeHuevos
 comment1.target=Tortilla(java.lang.String,\ int)
-comment2.params=huevos
-comment2.target=void\ a\u00F1adirHuevos(int)
+comment2.params=a\u00F1adirHuevos
+comment2.target=void\ a\u00F1adirMasHuevos(int)
 comment3.params=coccion
 comment3.target=void\ setPuntoDeCoccion(java.lang.String)
-comment4.params=tieneCebolla
-comment4.target=void\ llevaCebolla(boolean)
+comment4.params=
+comment4.target=void\ A\u00F1adirOQuitarCebolla()
 comment5.params=
 comment5.target=void\ imprimirEstadoTortilla()
 numComments=6

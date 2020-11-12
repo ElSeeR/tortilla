@@ -6,10 +6,22 @@ public class Tortilla{
 
     private boolean llevaCebolla;
 
-    public Tortilla(String getPuntoDeCoccion, int getNumeroDeHuevos){
-        puntoCoccion = getPuntoDeCoccion;
-        numeroHuevos = getNumeroDeHuevos;
+    public Tortilla(String puntoDeCoccion, int numeroDeHuevos){
+        puntoCoccion = puntoDeCoccion;
+        numeroHuevos = numeroDeHuevos;
         llevaCebolla = false;
+    }
+    
+    public String getPuntoDeCoccion(){
+        return puntoCoccion;
+    }
+    
+    public int getNumeroHuevos(){
+        return numeroHuevos;
+    }
+    
+    public boolean getLlevaCebolla(){
+        return llevaCebolla;
     }
 
     public void añadirMasHuevos(int añadirHuevos){

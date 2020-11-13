@@ -32,7 +32,7 @@ public class Tortilla{
         puntoCoccion = coccion;
     }
 
-    public void AñadirOQuitarCebolla(){
+    public void agregarOQuitarCebolla(){
         if(llevaCebolla == true){
             llevaCebolla = false;
         }
@@ -55,13 +55,14 @@ public class Tortilla{
     }
     
     public String mostrarEstadoTortilla(){
+        String estadoCebolla;
         if(llevaCebolla == true){
-           return "Hay " + numeroHuevos + " huevos, el punto de cocción es " +
-            puntoCoccion + ". Lleva cebolla?: Sí";
+           estadoCebolla = "Sí";
         }
         else{
-            return "Hay " + numeroHuevos + " huevos, el punto de cocción es " +
-            puntoCoccion + ". Lleva cebolla?: No";
+            estadoCebolla = "No";
         }
+        return "Hay " + numeroHuevos + " huevos, el punto de cocción es " +
+        puntoCoccion + ". Lleva cebolla?: " + estadoCebolla;
     }
 }
